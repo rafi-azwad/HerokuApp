@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14748" started-at="2023-02-22T21:50:57 BDT" finished-at="2023-02-22T21:51:11 BDT">
+  <suite name="Gradle suite" duration-ms="15311" started-at="2023-03-02T01:34:08 BDT" finished-at="2023-03-02T01:34:24 BDT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunnerTest@333291e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="cucumberTest" duration-ms="14748" started-at="2023-02-22T21:50:57 BDT" finished-at="2023-02-22T21:51:11 BDT">
-      <class name="TestRunner.CucumberRunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.CucumberRunnerTest@333291e3]" name="setUpClass" is-config="true" duration-ms="412" started-at="2023-02-22T21:50:57 BDT" finished-at="2023-02-22T21:50:57 BDT">
+    <test name="Gradle test" duration-ms="15311" started-at="2023-03-02T01:34:08 BDT" finished-at="2023-03-02T01:34:24 BDT">
+      <class name="TestRunner.WebRunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="setUpClass" is-config="true" duration-ms="411" started-at="2023-03-02T01:34:08 BDT" finished-at="2023-03-02T01:34:09 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunnerTest@333291e3]" name="runScenario" duration-ms="14201" started-at="2023-02-22T21:50:57 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-22T21:51:11 BDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="runScenario" duration-ms="8161" started-at="2023-03-02T01:34:09 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-02T01:34:17 BDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add new customer with valid data"]]>
+                <![CDATA["Add customer with valid data"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Add Customer]"]]>
+                <![CDATA["Optional[BankManagerLogin]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunnerTest@333291e3]" name="runScenario" duration-ms="16" started-at="2023-02-22T21:51:11 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-22T21:51:11 BDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="runScenario" duration-ms="1995" started-at="2023-03-02T01:34:17 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-02T01:34:19 BDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add Customer name and currency"]]>
+                <![CDATA["Add customer name and currency"]]>
               </value>
             </param>
             <param index="1">
@@ -43,22 +43,30 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at WebStepDefination.LoginStepDefination.userInOpenAccountPage(LoginStepDefination.java:39)
-at ✽.user in open account page(file:///C:/Users/Asus/Desktop/yes/WebAutomation/src/test/resources/Features/openAccount.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.CucumberRunnerTest@333291e3]" name="tearDownClass" is-config="true" duration-ms="95" started-at="2023-02-22T21:51:11 BDT" finished-at="2023-02-22T21:51:11 BDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="runScenario" duration-ms="4667" started-at="2023-03-02T01:34:19 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-02T01:34:24 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Customer information and delete customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customers Info]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.WebRunnerTest@7193666c]" name="tearDownClass" is-config="true" duration-ms="45" started-at="2023-03-02T01:34:24 BDT" finished-at="2023-03-02T01:34:24 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.CucumberRunnerTest -->
-    </test> <!-- cucumberTest -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestRunner.WebRunnerTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
 </testng-results>
