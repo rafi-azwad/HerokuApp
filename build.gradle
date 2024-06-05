@@ -10,8 +10,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
     implementation 'org.testng:testng:6.14.3'
 
@@ -19,9 +17,13 @@ dependencies {
     implementation 'org.json:json:20160810'
     implementation 'io.rest-assured:rest-assured:4.5.0'
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.5.0'
+    // implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
+
+
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-    implementation 'io.github.bonigarcia:webdrivermanager:5.1.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.6.2'
+
 
     implementation group: 'io.appium', name: 'java-client', version:'8.3.0'
 
@@ -30,6 +32,9 @@ dependencies {
 
     testImplementation 'io.cucumber:cucumber-java:6.10.0'
     testImplementation 'io.cucumber:cucumber-testng:6.10.0'
+
+    //https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder
+    implementation 'com.github.stephenc.monte:monte-screen-recorder:0.7.7.0'
 
 }
 

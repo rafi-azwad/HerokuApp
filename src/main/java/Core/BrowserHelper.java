@@ -11,10 +11,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-public class BrowserHelper {
-    protected WebDriver driver;
+import static Core.BaseURL.baseURL;
 
-    public WebDriver chrome(String URL) {
+public class BrowserHelper {
+    public static WebDriver driver;
+
+    public WebDriver chrome() {
 
         Map<String, Integer> contentSettings = new HashMap<String, Integer>();
         Map<String, Object> profile = new HashMap<String, Object>();
@@ -27,12 +29,14 @@ public class BrowserHelper {
         prefs.put("profile", profile);
 
         ChromeOptions options = new ChromeOptions();
-        options.setExperimentalOption("prefs", prefs);
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
 
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();;
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.get(URL);
+        //driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.get(baseURL);
         driver.manage().window().maximize();
         return driver;
 
